@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dataset directories (large image files)
+ffhq_images/*.png
+synthetic_faces/*.png
+dataset/
+data/*.jpg
+data/*.png
+
+# Model checkpoints (large .pth files)
+models/*.pth
+
+# Keep the models directory structure but ignore model files
+!models/.gitkeep
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.pdf
+*.tex
+sedNHYSKV
+*.bib
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Large data files
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# StyleGAN2 cache
+stylegan2-ada-pytorch/results/
+stylegan2-ada-pytorch/training-runs/

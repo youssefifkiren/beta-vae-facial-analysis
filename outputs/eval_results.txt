@@ -1,0 +1,56 @@
+Using device: cuda
+GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+VRAM: 8.59 GB
+Using device: cuda
+============================================================
+MODEL EVALUATION PIPELINE
+============================================================
+
+Loading models...
+✓ Models loaded
+
+Loading test dataset from test.csv...
+✓ Test dataset loaded: 450 samples
+✓ Classes: ['facial_asymmetry', 'hypertelorism', 'hypotelorism', 'long_lower_face', 'normal', 'short_lower_face']
+
+============================================================
+GENERATING PREDICTIONS
+============================================================
+
+Test Accuracy: 56.67%
+Random Baseline: 16.67%
+
+============================================================
+GENERATING VISUALIZATIONS
+============================================================
+✓ Saved confusion matrix to ./confusion_matrix.png
+Computing t-SNE projection (this may take a minute)...
+✓ Saved t-SNE plot to ./tsne_latent_space.png
+✓ Saved reconstruction examples to ./reconstruction_examples.png
+✓ Saved classification report to ./classification_report.txt
+
+                  precision    recall  f1-score   support
+
+facial_asymmetry     0.9114    0.9600    0.9351        75
+   hypertelorism     0.3467    0.3467    0.3467        75
+    hypotelorism     0.5405    0.5333    0.5369        75
+ long_lower_face     0.4706    0.5333    0.5000        75
+          normal     0.4576    0.3600    0.4030        75
+short_lower_face     0.6410    0.6667    0.6536        75
+
+        accuracy                         0.5667       450
+       macro avg     0.5613    0.5667    0.5625       450
+    weighted avg     0.5613    0.5667    0.5625       450
+
+
+============================================================
+EVALUATION COMPLETE!
+============================================================
+
+Generated files:
+  - confusion_matrix.png
+  - tsne_latent_space.png
+  - reconstruction_examples.png
+  - classification_report.txt
+
+These visualizations are ready for your project report!
