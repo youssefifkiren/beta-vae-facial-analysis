@@ -41,8 +41,6 @@ fc-aml-genai/
 ├──  merge_datasets.py             # Dataset merging
 ├──  new_auto_annotation.py        # Feature extraction
 │
-├──  report.tex                    # LaTeX report (French)
-├──  references.bib                # Bibliography
 └──  README.md                     # This file
 ```
 
@@ -150,9 +148,7 @@ python classifier_training.py
 
 **Note:** Requires StyleGAN2-ADA-PyTorch. See `stylegan_setup.py` for setup.
 
-## Results Summary
-
-### Classification Performance
+## Classification Performance
 
 | Class | Precision | Recall | F1-Score |
 |-------|-----------|--------|----------|
@@ -164,37 +160,12 @@ python classifier_training.py
 | Hypertelorism | 34.67% | 34.67% | 34.67% |
 | **Overall** | **56.13%** | **56.67%** | **56.25%** |
 
-### Key Findings
+### Findings
 
  **Strong asymmetry detection** - Binary features (symmetric/asymmetric) well captured  
  **Challenging eye spacing** - Continuous features harder to classify  
  **Modest augmentation gain** - +0.89% due to synthetic label ceiling  
  **Latent space structure** - Enables controlled facial variation generation  
-
-## LaTeX Report
-
-Full academic report in French following professor's structure:
-
-```bash
-# Compile report
-cd /mnt/d/fc-aml-genai
-pdflatex report.tex
-bibtex report
-pdflatex report.tex
-pdflatex report.tex
-```
-
-**Or use Overleaf:**
-1. Upload `report.tex`, `references.bib`
-2. Create `visualizations/` folder
-3. Upload all 8 PNG figures
-4. Compile automatically
-
-**Report includes:**
-- Complete methodology (β-VAE + StyleGAN2 architecture)
-- All results with 8 publication-quality figures
-- Limitations and future work
-- 10 academic references
 
 ##  Hardware Requirements
 
@@ -217,19 +188,6 @@ pdflatex report.tex
 - scikit-learn
 - OpenCV (cv2)
 - PIL (Pillow)
-
-##  Citation
-
-If you use this code for your research, please cite:
-
-```bibtex
-@software{facial_anomaly_detection_2026,
-  title={Facial Anomaly Detection with β-VAE and StyleGAN2},
-  author={Your Name},
-  year={2026},
-  url={https://github.com/yourusername/fc-aml-genai}
-}
-```
 
 ##  Contributing
 
@@ -254,7 +212,3 @@ This project is licensed under the MIT License - see LICENSE file for details.
 For questions or collaborations, please open an issue or reach out via email.
 
 ---
-
-**Status:**  Complete - Ready for academic submission and deployment
-
-**Last Updated:** February 2026
